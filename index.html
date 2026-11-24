@@ -17,8 +17,9 @@
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://pedcastr.github.io/proposta-zehmotoca/og-image.png" />
-<link rel="icon" href="img/favicon.png" />
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png?v=3" />
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png?v=3" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=3" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
 <style>
@@ -47,7 +48,7 @@ h3{font-weight:850}
 .yel{color:var(--y)}
 .lead{font-size:clamp(17px,1.55vw,20px);color:var(--mutd);max-width:720px;margin-top:22px}
 .light .lead{color:var(--mut)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;background:var(--y);color:#0c0c0d;font-weight:800;text-decoration:none;border:0;font-family:inherit;font-size:16px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:12px;background:var(--y);color:#0c0c0d;font-weight:800;text-decoration:none;border:0;font-family:inherit;font-size:16px;cursor:pointer;transition:transform .2s,box-shadow .2s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 0 -4px rgba(255,225,5,.25)}
 .btn .ar{transition:transform .2s}.btn:hover .ar{transform:translateX(4px)}
 .btn.line{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.3)}
@@ -67,7 +68,7 @@ h3{font-weight:850}
 .brand img{width:36px;height:36px}
 .nav ul{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:600;color:var(--mutd)}
 .nav ul a{text-decoration:none;transition:color .2s}.nav ul a:hover{color:#fff}
-.nav .btn{min-height:40px;padding:0 16px;font-size:14px}
+.nav .btn{min-height:40px;padding:0 16px;font-size:14px;border-radius:10px}
 
 /* hero */
 .hero{min-height:clamp(640px,100vh,960px);display:flex;align-items:center;padding:120px 0 80px;overflow:hidden;position:relative}
@@ -347,7 +348,7 @@ h3{font-weight:850}
 .date small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.07em;color:var(--mutd);font-weight:500;margin-bottom:2px}
 .price.main .ticks li{color:#0c0c0d}
 .price.main .ticks li::before{background:#0c0c0d}
-.plan{display:flex;width:100%;justify-content:space-between;align-items:center;gap:12px;text-align:left;min-height:72px;margin-top:12px;padding:14px 18px;border:1.5px solid var(--line);background:transparent;color:#fff;font-family:inherit;font-size:14.5px;cursor:pointer;transition:border-color .2s,background .2s}
+.plan{display:flex;width:100%;justify-content:space-between;align-items:center;gap:12px;text-align:left;min-height:72px;margin-top:12px;padding:14px 18px;border-radius:12px;border:1.5px solid var(--line);background:transparent;color:#fff;font-family:inherit;font-size:14.5px;cursor:pointer;transition:border-color .2s,background .2s}
 .plan:hover{border-color:rgba(255,255,255,.35)}
 .plan.on{border-color:var(--y);background:rgba(255,225,5,.07)}
 .plan b{display:block;font-size:17px}
