@@ -263,6 +263,55 @@ h3{font-weight:850}
 .group b{display:block;font-size:19px;font-weight:850;font-stretch:110%}
 .group .ticks{gap:8px;margin-top:14px;font-size:15px}
 
+/* plataforma */
+.alt{background:var(--ink2);border-top:1px solid var(--line)}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:60px}
+.trio article h3{font-size:clamp(23px,2.2vw,28px);margin:10px 0 0;letter-spacing:-.025em}
+.trio article p{color:var(--mutd);margin-top:12px;font-size:15.5px}
+.trio .int-n{display:block;margin-top:26px}
+.mock.mini{box-shadow:0 30px 60px -34px #000}
+.sgn,.vst,.ofc{height:384px;padding:16px;position:relative}
+#sem-limites{padding-bottom:0}
+#sem-limites .marq{margin-bottom:0;border-bottom:0}
+.paper{background:#f5f3ec;color:#141414;height:100%;padding:16px;border-radius:3px;display:flex;flex-direction:column;gap:7px}
+.paper h6{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;margin-bottom:6px}
+.paper>i{display:block;height:6px;background:#d9d4c4;border-radius:2px}
+.sg-row{display:flex;align-items:flex-end;gap:14px;margin-top:auto;border-bottom:1.5px solid #141414;padding-bottom:6px}
+.selfie{width:54px;height:54px;border-radius:50%;background:#c9c3b1;position:relative;overflow:hidden;flex:none;box-shadow:0 0 0 2px var(--ok)}
+.selfie span{position:absolute;left:50%;top:12px;width:20px;height:20px;margin-left:-10px;border-radius:50%;background:#8d866f;box-shadow:0 30px 0 12px #8d866f}
+.sig-l{flex:1;height:50px}
+.sig-l path{fill:none;stroke:#1a3d8f;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;transition:stroke-dashoffset 1.6s ease}
+.sgn [data-in="2"].on~.sig-l path,.sgn .sg-row:has(.on) .sig-l path{stroke-dashoffset:0}
+.seal{font-family:var(--mono);font-size:10.5px;line-height:1.4;color:#1d7a46;background:rgba(47,191,113,.14);padding:7px 9px;margin-top:8px}
+.vst{display:flex;flex-direction:column;gap:6px;font-size:13px;background:#111113}
+.vi{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;background:var(--ink3);border-radius:4px}
+.vi b{color:var(--ok);font-size:12px;white-space:nowrap}
+.vi b.w{color:var(--warn)}
+.vi.sig{box-shadow:inset 0 0 0 1.5px var(--y)}
+.next{margin-top:auto;padding:9px 10px;border-left:3px solid var(--y);background:rgba(255,225,5,.07);font-weight:700}
+.next small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--mutd);font-weight:500}
+.ofc{display:flex;flex-direction:column;gap:6px;font-size:13px;background:#111113}
+.of-h{display:flex;justify-content:space-between;align-items:center;padding-bottom:6px}
+.of-h span{font-family:var(--mono);background:var(--y);color:#0c0c0d;font-weight:700;padding:1px 8px;font-size:12px}
+.of-m{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:var(--ink3);border-radius:4px;font-family:var(--mono);font-size:12px}
+.of-m .tag{font-family:Archivo,sans-serif;font-style:normal}
+.xml{margin:6px 0 2px;padding:8px 10px;border:1px dashed rgba(255,225,5,.5);background:rgba(255,225,5,.05)}
+.xml small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--y)}
+.stk{display:flex;justify-content:space-between;padding:5px 2px;border-bottom:1px dashed var(--line);font-size:12.5px}
+.stk span{color:var(--mutd)}
+.stk em{font-style:normal;color:var(--ok);margin-left:6px;display:inline-block}
+.okos{margin-top:auto;padding:8px 10px;background:rgba(47,191,113,.14);color:var(--ok);font-weight:700;font-size:12.5px}
+.more-h{font-size:clamp(26px,3vw,36px);margin-top:90px;letter-spacing:-.025em}
+.mods{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:28px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.mod{padding:24px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .25s}
+.mod:hover{background:var(--ink2)}
+.mod b{display:block;font-size:17px;font-weight:850;font-stretch:108%;line-height:1.2}
+.mod b::before{content:"";display:block;width:18px;height:3px;background:var(--y);margin-bottom:14px;transition:width .3s}
+.mod:hover b::before{width:36px}
+.mod p{color:var(--mutd);font-size:14.5px;margin-top:8px}
+.teaser{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:28px;padding:22px 26px;background:var(--y);color:#0c0c0d;font-size:17px}
+.teaser b{font-size:clamp(19px,2vw,24px);font-weight:900;font-stretch:112%;letter-spacing:-.02em}
+
 /* referência */
 .ref{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:center;padding:42px;background:#fff;border:1px solid var(--paper2);margin-top:50px}
 .ref img{width:100%;max-width:230px;margin:auto}
@@ -329,6 +378,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  .steps{grid-template-columns:1fr 1fr 1fr}
  .cards{grid-template-columns:1fr 1fr}
  .groups{grid-template-columns:1fr 1fr}
+ .trio{grid-template-columns:minmax(0,1fr);gap:56px;max-width:560px}
+ .mods{grid-template-columns:repeat(2,minmax(0,1fr))}
  .group,.group:nth-child(3n+2),.group:nth-child(3n){padding:26px 22px 26px 0;border-left:0}
  .group:nth-child(2n){padding-left:22px;border-left:1px solid var(--line)}
  .ref{grid-template-columns:1fr;text-align:center;padding:30px}
@@ -345,7 +396,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  .side{border-left:0;border-top:1px solid var(--line)}
  .tpl{border-right:0;border-bottom:1px solid var(--line)}
  .steps{grid-template-columns:1fr 1fr}
- .cards,.groups{grid-template-columns:1fr}
+ .cards,.groups,.mods{grid-template-columns:1fr}
+ .teaser{padding:20px}
  .group:nth-child(2n){padding-left:0;border-left:0}
  .price{padding:28px 22px}
  .filial{grid-template-columns:1fr;gap:10px;padding:22px}
@@ -377,6 +429,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <ul>
       <li><a href="#integracoes">Integrações</a></li>
       <li><a href="#velocidade">Velocidade</a></li>
+      <li><a href="#plataforma">Plataforma</a></li>
       <li><a href="#sem-limites">Sem limites</a></li>
       <li><a href="#referencias">Referências</a></li>
     </ul>
@@ -622,9 +675,98 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </section>
 
-<section id="sem-limites">
+<section id="plataforma">
   <div class="wrap">
-    <div class="k rv"><b>04</b>Sem limites</div>
+    <div class="k rv"><b>04</b>Muito além das integrações</div>
+    <h2 class="rv d1">As integrações são só a parte visível. <span class="yel">O resto do sistema vai bem mais longe.</span></h2>
+    <p class="lead rv d2">Cada rotina da locadora tem uma ferramenta pensada para locação de motos: do contrato à vistoria, da oficina ao repasse do investidor. Três delas, para começar:</p>
+
+    <div class="trio">
+      <article class="rv">
+        <div class="mock mini">
+          <div class="mock-top"><i></i><i></i><i></i><span>sistema · <em>assinatura</em></span></div>
+          <div class="sgn" data-play data-ms="1100" data-hold="4">
+            <div class="paper">
+              <h6>CONTRATO DE LOCAÇÃO Nº 1187</h6>
+              <i style="width:92%"></i><i style="width:84%"></i><i style="width:88%"></i><i style="width:60%"></i>
+              <i style="width:90%"></i><i style="width:76%"></i>
+              <div class="sg-row">
+                <div class="selfie" data-in="2"><span></span></div>
+                <svg class="sig-l" viewBox="0 0 160 50" aria-hidden="true"><path d="M5 35 C20 5 30 45 42 22 S60 8 66 30 S85 40 92 18 S110 10 118 32 S140 30 155 14"/></svg>
+              </div>
+              <div class="seal" data-in="3">Assinado eletronicamente · 18/11 08:19 · selfie, IP e geolocalização registrados</div>
+            </div>
+          </div>
+        </div>
+        <span class="int-n">4.1 · CONTRATO DIGITAL</span>
+        <h3>Assinado pelo celular, com selfie.</h3>
+        <p>O contrato sai preenchido com os dados do cadastro e da moto. O locatário assina pelo celular com selfie, e data, hora e IP ficam registrados. Aditivos, troca de moto e quitação seguem o mesmo caminho.</p>
+      </article>
+
+      <article class="rv d1">
+        <div class="mock mini">
+          <div class="mock-top"><i></i><i></i><i></i><span>app da equipe · <em>vistoria</em></span></div>
+          <div class="vst" data-play data-ms="900" data-hold="4">
+            <div class="vi" data-in="1"><span>Farol e lanterna</span><b>foto ✓</b></div>
+            <div class="vi" data-in="2"><span>Pneu dianteiro</span><b>foto ✓</b></div>
+            <div class="vi" data-in="3"><span>Pneu traseiro</span><b>foto ✓</b></div>
+            <div class="vi" data-in="4"><span>Tanque e carenagem</span><b class="w">avaria anotada</b></div>
+            <div class="vi" data-in="5"><span>Hodômetro</span><b>12.480 km</b></div>
+            <div class="vi sig" data-in="6"><span>Assinatura + selfie do locatário</span><b>✓</b></div>
+            <div class="next" data-in="7"><small>PRÓXIMAS VISTORIAS PROGRAMADAS</small>18/12 · 17/01 · 16/02</div>
+          </div>
+        </div>
+        <span class="int-n">4.2 · VISTORIA PADRÃO LOCALIZA</span>
+        <h3>Faz uma vez e as próximas já ficam agendadas.</h3>
+        <p>Vistoria item a item pela câmera do celular, com fotos, avarias anotadas e assinatura do locatário com selfie. A de entrega já programa as periódicas e a de devolução compara tudo com a primeira.</p>
+      </article>
+
+      <article class="rv d2">
+        <div class="mock mini">
+          <div class="mock-top"><i></i><i></i><i></i><span>app do mecânico · <em>oficina</em></span></div>
+          <div class="ofc" data-play data-ms="1100" data-hold="4">
+            <div class="of-h"><b>Motos na oficina</b><span>4</span></div>
+            <div class="of-m"><span>PMR-4H21</span><em class="t-w tag">Aguardando aprovação</em></div>
+            <div class="of-m"><span>QRT-7B90</span><em class="t-ok tag">Em serviço</em></div>
+            <div class="xml" data-in="1"><small>NF-e 4512.xml importada</small><b>12 itens entraram no estoque</b></div>
+            <div class="stk"><span>Relação CG 160</span><b>4 <em data-in="2">+6</em></b></div>
+            <div class="stk"><span>Óleo 10W30 · 1 L</span><b>9 <em data-in="2">+24</em></b></div>
+            <div class="stk"><span>Pastilha dianteira</span><b>2 <em data-in="2">+10</em></b></div>
+            <div class="okos" data-in="3">OS 3381 aprovada pelo gestor no celular</div>
+          </div>
+        </div>
+        <span class="int-n">4.3 · OFICINA E ESTOQUE</span>
+        <h3>O mecânico tem o próprio aplicativo.</h3>
+        <p>Uma versão do app da equipe feita para a oficina. O mecânico vê as motos que estão com ele, abre a OS com fotos e consulta o estoque. As peças entram pelo XML da nota fiscal, sem digitar item por item.</p>
+      </article>
+    </div>
+
+    <h3 class="more-h rv">E tem muito mais dentro do sistema</h3>
+    <div class="mods">
+      <div class="mod rv"><b>App do locatário</b><p>Paga no Pix, vê contrato, semanas, multas e documentos, e abre sinistro pelo celular.</p></div>
+      <div class="mod rv d1"><b>Troca de óleo pelo app</b><p>O locatário registra com foto e vídeo, a equipe confere, e o histórico fica na moto.</p></div>
+      <div class="mod rv d2"><b>Tabela de preço por oficina</b><p>Cada serviço tem preço combinado. Se vier acima da tabela, o sistema avisa antes de aprovar.</p></div>
+      <div class="mod rv d3"><b>Fechamento das oficinas</b><p>Quanto cada oficina recebeu e tem a receber no mês, serviço por serviço.</p></div>
+      <div class="mod rv"><b>Investidores</b><p>Motos de cada investidor, receita, custos e repasse do mês, com relatório pronto para enviar.</p></div>
+      <div class="mod rv d1"><b>Sinistros</b><p>Ocorrência, fotos, boletim, oficina e custos do sinistro num só registro.</p></div>
+      <div class="mod rv d2"><b>Caução e acordos</b><p>Caução, acordos de dívida, negativação e quitação controlados por contrato.</p></div>
+      <div class="mod rv d3"><b>Documentos da frota</b><p>Licenciamento e documentos de cada moto com vencimento e alerta.</p></div>
+      <div class="mod rv"><b>Kanban de clientes</b><p>Origem de cada lead e funil completo até virar contrato.</p></div>
+      <div class="mod rv d1"><b>Disparos em massa</b><p>Campanhas para a carteira, para ex-locatários e para leads parados.</p></div>
+      <div class="mod rv d2"><b>Inteligência artificial</b><p>IA no atendimento e para apontar gargalos e riscos na operação.</p></div>
+      <div class="mod rv d3"><b>Rentabilidade por moto</b><p>Receita, custo de oficina e lucro de cada moto e de cada modelo.</p></div>
+      <div class="mod rv"><b>Contas a pagar</b><p>Despesas com vencimento, categoria, centro de custo e baixa por banco.</p></div>
+      <div class="mod rv d1"><b>Perfis e auditoria</b><p>Admin, atendente, mecânico e vistoriador, cada um vendo só o que precisa. Tudo auditado.</p></div>
+      <div class="mod rv d2"><b>Calendário e notificações</b><p>Vencimentos, vistorias e OS chegam como alerta no app da equipe.</p></div>
+      <div class="mod rv d3"><b>Backups e monitoramento</b><p>Cópia de segurança 2 vezes por dia e servidores vigiados o tempo todo.</p></div>
+    </div>
+    <div class="teaser rv"><span>E várias outras funções que vale a pena ver funcionando.</span><b>Mostramos tudo ao vivo na reunião.</b></div>
+  </div>
+</section>
+
+<section id="sem-limites" class="alt">
+  <div class="wrap">
+    <div class="k rv"><b>05</b>Sem limites</div>
     <h2 class="rv d1">A Zeh Motoca cresce. <span class="yel">A mensalidade, não.</span></h2>
     <p class="lead rv d2">Nada de cobrança por usuário, por moto ou por contrato. A manutenção é fixa, para a operação crescer o quanto precisar.</p>
     <div class="nolim">
@@ -638,22 +780,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <span>Kanban de clientes</span><span>Vistoria com selfie</span><span>Assinatura digital</span><span>Ordens de serviço</span><span>Contas a pagar</span><span>Rentabilidade por moto</span><span>Investidores</span><span>App do locatário</span><span>App da equipe</span><span>Auditoria</span>
     <span>Kanban de clientes</span><span>Vistoria com selfie</span><span>Assinatura digital</span><span>Ordens de serviço</span><span>Contas a pagar</span><span>Rentabilidade por moto</span><span>Investidores</span><span>App do locatário</span><span>App da equipe</span><span>Auditoria</span>
   </div></div>
-  <div class="wrap">
-    <div class="groups">
-      <div class="group rv"><b>Equipe e segurança</b><ul class="ticks"><li>Perfis de admin, atendente, mecânico e vistoriador</li><li>Auditoria de quem fez o quê, e quando</li><li>Backups 2 vezes por dia e monitoramento</li></ul></div>
-      <div class="group rv d1"><b>Clientes e contratos</b><ul class="ticks"><li>Funil do lead até o contrato</li><li>Aditivos, troca de moto e quitação</li><li>Sinistros e documentos</li></ul></div>
-      <div class="group rv d2"><b>Oficina</b><ul class="ticks"><li>App para o mecânico parceiro abrir OS</li><li>Tabela de preço e alerta de serviço acima dela</li><li>Estoque de peças e fechamento por oficina</li></ul></div>
-      <div class="group rv"><b>Financeiro</b><ul class="ticks"><li>Contas a receber e a pagar</li><li>Caixa por banco, conciliado</li><li>Caução, acordos e negativados</li></ul></div>
-      <div class="group rv d1"><b>Investidores</b><ul class="ticks"><li>Motos de cada investidor</li><li>Receita, custos e repasse do mês</li><li>Relatório pronto para enviar</li></ul></div>
-      <div class="group rv d2"><b>Relatórios</b><ul class="ticks"><li>Receita, projeção e inadimplência</li><li>Lucro por moto e por modelo</li><li>Custo de oficina e funil de clientes</li></ul></div>
-    </div>
-  </div>
 </section>
 
 <section class="light" id="referencias">
   <div class="wrap">
-    <div class="k rv"><b>05</b>Referências</div>
-    <h2 class="rv d1">Quem indicou foi, de novo, <span class="hl">a Zé Loc.</span></h2>
+    <div class="k rv"><b>06</b>Referências</div>
+    <h2 class="rv d1">Uma indicação <span class="hl">da Zé Loc.</span></h2>
     <div class="ref rv d2">
       <img src="img/clientes/zeloc.png" alt="Zé Loc" />
       <div>
@@ -681,7 +813,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="investimento">
   <div class="wrap">
-    <div class="k rv"><b>06</b>Investimento</div>
+    <div class="k rv"><b>07</b>Investimento</div>
     <h2 class="rv d1">Uma implantação. <span class="yel">Toda a rede pronta para crescer.</span></h2>
     <div class="prices rv d2">
       <div class="price main">
