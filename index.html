@@ -339,6 +339,12 @@ h3{font-weight:850}
 .amount{font-size:clamp(54px,7vw,96px);font-weight:900;line-height:1;margin:14px 0 6px;letter-spacing:-.04em;font-stretch:112%}
 .amount small{font-size:22px;letter-spacing:0;font-weight:700;vertical-align:.9em;margin-right:4px}
 .amount .per{font-size:20px;vertical-align:baseline;margin-left:6px;letter-spacing:0}
+.parc-t{font-weight:700;font-size:17px}
+.parc6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;margin:18px 0 26px}
+.parc6 div{background:rgba(0,0,0,.1);box-shadow:inset 0 0 0 1px rgba(0,0,0,.18);padding:10px 2px;text-align:center;font-size:13px;font-weight:800}
+.parc6 small{display:block;font-family:var(--mono);font-weight:500;font-size:11px}
+.date{margin-top:14px;padding:14px 18px;border-left:3px solid var(--y);background:rgba(255,225,5,.07);font-weight:800;font-size:17px}
+.date small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.07em;color:var(--mutd);font-weight:500;margin-bottom:2px}
 .price.main .ticks li{color:#0c0c0d}
 .price.main .ticks li::before{background:#0c0c0d}
 .plan{display:flex;width:100%;justify-content:space-between;align-items:center;gap:12px;text-align:left;min-height:72px;margin-top:12px;padding:14px 18px;border:1.5px solid var(--line);background:transparent;color:#fff;font-family:inherit;font-size:14.5px;cursor:pointer;transition:border-color .2s,background .2s}
@@ -398,6 +404,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  .steps{grid-template-columns:1fr 1fr}
  .cards,.groups,.mods{grid-template-columns:1fr}
  .teaser{padding:20px}
+ .parc6{grid-template-columns:repeat(3,minmax(0,1fr))}
  .group:nth-child(2n){padding-left:0;border-left:0}
  .price{padding:28px 22px}
  .filial{grid-template-columns:1fr;gap:10px;padding:22px}
@@ -819,6 +826,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="price main">
         <span class="kk">Implantação · Filial Fortaleza</span>
         <div class="amount"><small>R$</small>30.000</div>
+        <p class="parc-t">em 6 parcelas de R$ 5.000</p>
+        <div class="parc6"><div><small>1ª</small>R$ 5 mil</div><div><small>2ª</small>R$ 5 mil</div><div><small>3ª</small>R$ 5 mil</div><div><small>4ª</small>R$ 5 mil</div><div><small>5ª</small>R$ 5 mil</div><div><small>6ª</small>R$ 5 mil</div></div>
         <ul class="ticks">
           <li>Sistema completo de locação com a marca Zeh Motoca</li>
           <li>Integrações com SafeLock, rastreamento, DETRAN e banco</li>
@@ -832,6 +841,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="amount"><small>R$</small><span id="mens">2.500</span><span class="per">/mês</span></div>
         <button class="plan on" type="button" data-v="2.500"><span><b>Com VozChat</b><span>Sistema + WhatsApp oficial integrado</span></span><strong>R$ 2.500</strong></button>
         <button class="plan" type="button" data-v="2.000"><span><b>Sem VozChat</b><span>Somente o sistema e as integrações</span></span><strong>R$ 2.000</strong></button>
+        <div class="date"><small>PRIMEIRO PAGAMENTO DA MANUTENÇÃO</small>20 de fevereiro de 2027</div>
         <ul class="ticks" style="margin-top:22px;font-size:15px">
           <li>Usuários, motos, locatários e investidores ilimitados</li>
           <li>Atualizações, suporte, backups e monitoramento</li>
